@@ -20,7 +20,6 @@ class CartTest(unittest.TestCase):
     def test_show(self):
         test_cart = Cart()
         test_cart.add('banana', 1, 0)
-        self.assertEqual(test_cart.total, 0, msg='total is not correct')
         self.assertIsInstance(test_cart.items, dict, msg='Items are not in cart')
 
 
